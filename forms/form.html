@@ -91,7 +91,6 @@
            
                <fieldset>
                 <legend>Social Media</legend>
-                <h1>Social</h1>
 
                 <input id="Instagram" type="checkbox"name="social" value="instagram" >
                 <label for="Instagram">Instagram</label>
@@ -118,7 +117,49 @@
                 </datalist>
                 <br>
                 <label for="favoritecolor">cor</label>
-                <input type="color" name="userfavoritecolor"id="favoritecolor">       
+                <input type="color" name="userfavoritecolor"id="favoritecolor">     
+                
+                <fieldset>
+                 <legend> Escada de satifsação</legend>
+                
+
+                 <input  id="ruim"type="radio"name="userServiceOpinion" value="Ruim">
+                 <label for="ruim">ruim</label>
+                 <input id="bom" type="radio"name="userServiceOpinion" value="bom">
+                 <label for="bom">bom</label>
+                 <input id="muito bom" type="radio"name="userServiceOpinion" value="Muito bom">
+                 <label for="Muito bom">Muito bom</label>
+                 <br>
+                 <textarea name="usercomment" id="comment" placeholder="Digite sua opninião aqui"></textarea>
+                 </fieldset>
+                 <br>
+
+                 <fieldset>
+                 <legend>Comentário</legend>
+                 <label for="comment">comentario</label>
+                 <br>
+                 <textarea id="comment">...</textarea>
+
+                 </fieldset>
+
+                 <fieldset>
+                    <legend>Confirmação</legend>
+                    <input type="checkbox"name="userLgpd"id="userLgpdTerm"value="accepted"required>
+                    <label for="userLgpdTerm">Eu aceito participar da pesquisa</label>
+
+                    <input type="checkbox"name="userGetResult"value="accepted">
+                    <label for="userLgpdTerm">Desejo receber resultado por email</label>
+
+                    <br>
+
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+
+                 </fieldset>
+              
+                 
+
+                </fieldset>
 
  
 
