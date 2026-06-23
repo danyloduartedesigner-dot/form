@@ -1,1 +1,100 @@
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+text-align:center;
+}
+
+body{
+    background-color: #FFFFFF;
+    font-family: "Work Sans", sans-serif;
+    
+}
+
+main{
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+h1{
+    
+  font-family: "Fjalla One", sans-serif;
+  font-weight: bold
+  font-style: normal;
+  text-align:center;
+
+
+}
+form{
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 5px;
+    
+    
+
+}
+fieldset{
+    padding: 15px;
+    border: 1px solid #CCCCCCCC;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+legend{
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0 5px;
+}
+button{
+   width: 100px;
+   height: 30px;
+   margin-right: 10px;
+   background-color: #FFFFFF;
+   border: 1px solid #CCCCCCCC;
+   border-radius: 5px;
+   cursor: pointer;
+
+}
+section{
+    line-height: 32px
+    
+
+    }
+
+    label{
+        display: inline-block;
+        
+    }
+
+    input, select, textarea{
+          width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    textarea{
+        min-height: 100px;
+    }
+    input[type="radio"],
+    input[type="checkbox"]{
+        width: auto;
+    }
+input[ type="color"]{
+    width: auto;
+    padding: 0 5px;
+}
+
+button[type="submit"]:hover{
+    background-color: green;
+    color: #FFFFFF;
+}
+button[type="reset"]:hover{
+    background-color: orangered;
+    color: #FFFFFF;
+}
+
+

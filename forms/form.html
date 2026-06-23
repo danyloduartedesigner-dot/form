@@ -8,18 +8,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Forms</title>
+    <title>Pesquisa culturama</title>
 </head>
+<header>
 
-<h1>Forms</h1>
+   <form action="sucesso.html"method="get">
+            <img src="logo-culturama.png" alt="logo-culturama">
+           <h1>Pesquisa de opinião</h1>
+
+  </header>
+
 <body>
+    <main>
+
     <section>
        
-        <form action=""method="get">
-            <img src="logo-culturama.png" alt="logo-culturama">
-           <h1> <legend>Formulário</legend></h1>
-           <p>Gênero</p>
+          
             <fieldset>
+                 <legend>Dados pessoais</legend>
 
 
             <label for="name">Name</label>
@@ -42,17 +48,10 @@
             <br>
             </fieldset>
 
-            <fieldset>
-                <legend>Perfil</legend>
-
-                <input id="Feminino" type="radio" name="undergender"value="Feminino">
-                <label for="usergender">Feminino</label>
-                 <input id="Masculino" type="radio" name="undergender"value="Masculino">
-                <label for="usergender">Masculino</label>
-                 <input id="notInformed" type="Radio" name="undergender"value="notInformed">
-                <label for="Usergender">Prefiro não informar</label>
+        
                  <br>
                 
+                <fieldset>
             <label for="maritalstatus">Estado civil</label>
             <select id="maritalstatus" name="maritalstatus">
                 <option value="Notinformed">Selecione...</option>
@@ -60,6 +59,7 @@
                  <option value="Solteiro">Solteiro</option>
                   <option value="Divorciado">Divorciado</option>
                    </select>
+                  
 
                     <label for="states">Cidade (região)</label>
                 <select id="states" name="userstate"required>
@@ -89,15 +89,31 @@
                 <option value="saoPaulo"> São Paulo</option> 
                 <option value="parana"> Paraná</option> 
                 <option value="rioGrandeDoSul"> Rio Grande do Sul</option>  
-                <option value="santaCatarina">Santa Catarina</option> 
-                    
+                <option value="santaCatarina">Santa Catarina</option>    
               </select>
-
+               <br>
                <label for="city">Cidade</label>
                  <input id="city" type="text" name="usercity"value="Endereço">
-           
+           </fieldset>
+               <br>
                <fieldset>
-                <legend>Social Media</legend>
+                     
+                  <legend>Perfil</legend>
+
+                <input id="Feminino" type="radio" name="undergender"value="Feminino">
+                <label for="usergender">Feminino</label>
+                 <input id="Masculino" type="radio" name="undergender"value="Masculino">
+                <label for="usergender">Masculino</label>
+                 <input id="notInformed" type="Radio" name="undergender"value="notInformed">
+                <label for="Usergender">Prefiro não informar</label>
+
+               </fieldset>
+             
+
+
+            <fieldset>
+              
+                <legend>Hábitos</legend>
 
                 <input id="Instagram" type="checkbox"name="social" value="instagram" >
                 <label for="Instagram">Instagram</label>
@@ -111,9 +127,10 @@
                 <input id="x" type="checkbox"name="social" value="x" >
                 <label for="x">x</label>
 
-               </fieldset>
+              <br>
+              <fieldset>
 
-               <fieldset>
+             
                 <label for="musicStyle">Estilo musical:</label>
                 <input list="styleTypes" id="musicStyle" name="userMusicStyle" type="text">
                 <datalist id="styleTypes">
@@ -121,13 +138,16 @@
                     <option value="samba">
                     <option value="pop">
                     <option value="funk">
-                </datalist>
+
+              </fieldset>
+              
                 <br>
                 <label for="favoritecolor">cor</label>
                 <input type="color" name="userfavoritecolor"id="favoritecolor">     
-                
+                </fieldset>
+
                 <fieldset>
-                 <legend> Escada de satifsação</legend>
+                 <legend> Confirmações</legend>
                 
 
                  <input  id="ruim"type="radio"name="userServiceOpinion" value="Ruim">
@@ -138,47 +158,33 @@
                  <label for="Muito bom">Muito bom</label>
                  <br>
                  <textarea name="usercomment" id="comment" placeholder="Digite sua opninião aqui"></textarea>
-                 </fieldset>
+                 
                  <br>
 
-                 <fieldset>
+                 <!--
+                <fieldset>
                  <legend>Comentário</legend>
                  <label for="comment">comentario</label>
                  <br>
                  <textarea id="comment">...</textarea>
 
-                 </fieldset>
+                 </fieldset>-->
 
-                 <fieldset>
-                    <legend>Confirmação</legend>
+                 
+                    
                     <input type="checkbox"name="userLgpd"id="userLgpdTerm"value="accepted"required>
                     <label for="userLgpdTerm">Eu aceito participar da pesquisa</label>
-
                     <input type="checkbox"name="userGetResult"value="accepted">
                     <label for="userLgpdTerm">Desejo receber resultado por email</label>
-
+                     <br>
                     <button type="submit">Enviar</button>
                     <button type="reset">limpar</button>
-
-                 </fieldset>
-              
-                 
-
+                
                 </fieldset>
-
- 
-
-               </fieldset>
-
-           
-
-
-               
-            <button type="submit"> Enviar</button>
 
 
         </form>
     </section>
-    
+    </main>
 </body>
 </html>
