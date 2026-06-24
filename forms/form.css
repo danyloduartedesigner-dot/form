@@ -75,16 +75,22 @@ section{
           width: 100%;
         padding: 10px;
         border-radius: 5px;
+        border: 0,5px solid #424141;
+        
     }
+
     textarea{
         min-height: 100px;
+        
     }
+
+    
     input[type="radio"],
     input[type="checkbox"]{
         width: auto;
     }
 input[ type="color"]{
-    width: auto;
+    width: 10%;
     padding: 0 5px;
 }
 
@@ -97,4 +103,36 @@ button[type="reset"]:hover{
     color: #FFFFFF;
 }
 
+input[type="text"]:focus:valid,
+input[type="number"]:focus:valid,
+input[type="date"]:focus:valid,
+input[type="email"]:focus:valid,
+input[type="tel"]:focus:valid,
+input[type="file"]:focus:valid,
+textarea:focus:valid,
+select:focus:valid {
+    border-color: green;
+}
 
+input[type="text"]:focus:invalid,
+input[type="number"]:focus:invalid,
+input[type="date"]:focus:invalid,
+input[type="email"]:focus:invalid,
+input[type="tel"]:focus:invalid,
+input[type="file"]:focus:invalid,
+textarea:focus:invalid,
+select:focus:invalid {
+    border-color: red;
+}
+input[type="radio"] {
+    accent-color: green;
+}
+input[type="checkbox"] {
+    accent-color: #070707;
+}
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 128, 0, 0.3);
+}
