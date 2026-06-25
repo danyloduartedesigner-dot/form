@@ -83,7 +83,10 @@ section{
         min-height: 100px;
         
     }
-
+ input[type="tel"],
+ input[type="file"]{
+    margin-bottom: 0;
+ }
     
     input[type="radio"],
     input[type="checkbox"]{
